@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+rootProject.name = 'clean-architecture-conference-service'
+

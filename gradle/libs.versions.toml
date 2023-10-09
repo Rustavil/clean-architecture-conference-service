@@ -1,0 +1,16 @@
+[versions]
+kotlin = "1.9.0"
+springBoot = "3.1.4"
+
+[libraries]
+jakartaInject = "jakarta.inject:jakarta.inject-api:2.0.1"
+mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:4.1.0"
+springBootDependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
+springBootStarterWeb = { module = "org.springframework.boot:spring-boot-starter-web" }
+springdoc = "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0"
+kotestAssertions = "io.kotest:kotest-assertions-core:5.7.2"
+jacksonModuleKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+
+[bundles]
+
+[plugins]

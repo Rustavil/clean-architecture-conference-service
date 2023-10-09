@@ -1,0 +1,27 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version libs.versions.kotlin
+    id 'org.jetbrains.kotlin.plugin.spring' version libs.versions.kotlin
+    id 'org.springframework.boot' version libs.versions.springBoot
+}
+
+group = 'com.swedbank'
+version = '1.0-SNAPSHOT'
+
+dependencies {
+    implementation platform(libs.springBootDependencies)
+    implementation(libs.jakartaInject)
+    implementation(libs.mockitoKotlin)
+    implementation(libs.springBootStarterWeb)
+    implementation(libs.springdoc)
+    implementation(libs.kotestAssertions)
+    implementation(libs.jacksonModuleKotlin)
+    testImplementation('org.jetbrains.kotlin:kotlin-test')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+allOpen {
+    annotation('jakarta.inject.Named')
+}
