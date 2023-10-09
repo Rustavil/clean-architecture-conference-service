@@ -14,3 +14,10 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = 'clean-architecture-conference-service'
 
+include 'application'
+include 'business'
+include 'entrypoint'
+include 'gateway'
+//include 'gateway-cache'
+//include 'gateway-db'
+

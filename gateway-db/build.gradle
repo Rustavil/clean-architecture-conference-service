@@ -1,0 +1,8 @@
+plugins {
+    id('org.jetbrains.kotlin.plugin.jpa')
+}
+dependencies {
+    implementation(libs.jakartaInject)
+    implementation(libs.springStarterDataJpa)
+    implementation(projects.business)
+}

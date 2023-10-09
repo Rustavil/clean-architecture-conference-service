@@ -4,12 +4,19 @@ springBoot = "3.1.4"
 
 [libraries]
 jakartaInject = "jakarta.inject:jakarta.inject-api:2.0.1"
+jakartaPersistence = "jakarta.persistence:jakarta.persistence-api:3.1.0"
 mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:4.1.0"
 springBootDependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
 springBootStarterWeb = { module = "org.springframework.boot:spring-boot-starter-web" }
+springContext = { module = "org.springframework:spring-context" }
+springWeb = { module = "org.springframework:spring-web" }
+springDataJpa = { module = "org.springframework.data:spring-data-jpa" }
+springStarterDataJpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
 springdoc = "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0"
+h2 = { module = "com.h2database:h2" }
 kotestAssertions = "io.kotest:kotest-assertions-core:5.7.2"
 jacksonModuleKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+jacksonDatatypeJsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" }
 
 [bundles]
 

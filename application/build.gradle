@@ -1,0 +1,14 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    implementation(libs.springBootStarterWeb)
+    implementation(libs.springdoc)
+    implementation(projects.business)
+    implementation(projects.entrypoint)
+    implementation(projects.gateway)
+//    implementation(projects.gatewayCache)
+//    implementation(projects.gatewayDb)
+//    implementation(libs.h2)
+}

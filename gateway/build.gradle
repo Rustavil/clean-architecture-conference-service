@@ -1,0 +1,5 @@
+dependencies {
+    implementation(libs.jakartaInject)
+    implementation(libs.springContext)
+    implementation(projects.business)
+}
