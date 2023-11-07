@@ -1,7 +1,6 @@
 dependencies {
-    implementation(libs.jakartaInject)
     implementation(libs.jacksonModuleKotlin)
+    testImplementation(libs.jacksonDatatypeJsr310)
     implementation(libs.springWeb)
     implementation(projects.business)
-    testImplementation(libs.jacksonDatatypeJsr310)
 }
